@@ -20,7 +20,7 @@ jobs:
           url: https://vault.basedosdados.org
           token: ${{ secrets.VAULT_TOKEN}}
           secrets: |
-            secret/data/queries_credentials/basedosdados-dev    GCP_SA_KEY_BASE64 | GCP_SA_KEY_BASE64;
+            secret/data/gcp_credentials/basedosdados-dev    GCP_SA_KEY_BASE64 | GCP_SA_KEY_BASE64;
 
       - name: Setup Python version
         uses: actions/setup-python@v2
